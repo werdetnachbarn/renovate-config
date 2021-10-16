@@ -1,0 +1,22 @@
+stages:
+  - validate
+
+validateConfig:
+  stage: validate
+  image: node:latest
+  tags:
+    - docker-runner
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 days
+    when: always
+  script:
+    - npm --version
+    - npm i -g renovate
+    - renovate-config-validator
+  cache:
+    key: cache-over-all-branches-npm
+    paths:
+      - .npm/
+      - node_modules/
