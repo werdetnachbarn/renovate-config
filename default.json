@@ -18,6 +18,12 @@
   "dependencyDashboardLabels": [
     "Update"
   ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": [
+      "schedule:weekends"
+    ]
+  },
   "packageRules": [
     {
       "matchDatasources": ["npm"],

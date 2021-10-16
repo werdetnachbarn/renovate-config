@@ -11,9 +11,10 @@ validateConfig:
       - node_modules/
     expire_in: 1 days
     when: always
-  script:
+  before_script:
     - npm --version
     - npm i -g renovate
+  script:
     - RENOVATE_CONFIG_FILE=default.json renovate-config-validator
   cache:
     key: cache-over-all-branches-npm
