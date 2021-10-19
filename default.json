@@ -16,6 +16,7 @@
     "christian",
     "florian"
   ],
+  "dependencyDashboardAutoclose": true,
   "dependencyDashboardLabels": [
     "Update"
   ],
