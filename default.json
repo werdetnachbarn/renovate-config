@@ -16,6 +16,7 @@
     "christian",
     "florian"
   ],
+  "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardLabels": [
     "Update"
@@ -30,6 +31,22 @@
     {
       "matchDatasources": ["npm"],
       "stabilityDays": 3
+    },
+    {
+      "description": "Require dashboard approval for major updates",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
+      "automerge": true
+    },
+    {
+      "description": "Group prettier packages",
+      "matchPackageNames": ["prettier"],
+      "matchPackagePatterns": ["^@prettier\\/", "^prettier-plugin-"],
+      "groupName": "prettier packages"
     }
   ]
 }
