@@ -5,7 +5,8 @@
     ":semanticCommits",
     "github>whitesource/merge-confidence:beta",
     ":prHourlyLimitNone",
-    ":prConcurrentLimit10"
+    ":prConcurrentLimit10",
+    ":timezone(Europe/Berlin)"
   ],
   "addLabels": [
     "Update"
