@@ -30,7 +30,7 @@
   "packageRules": [
     {
       "matchDatasources": ["npm"],
-      "stabilityDays": 3
+      "rollbackPrs": true
     },
     {
       "description": "Require dashboard approval for major updates",
@@ -48,5 +48,8 @@
       "matchPackagePatterns": ["^@prettier\\/", "^prettier-plugin-"],
       "groupName": "prettier packages"
     }
-  ]
+  ],
+  "rollback": {
+    "automerge": true
+  }
 }
