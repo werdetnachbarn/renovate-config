@@ -11,11 +11,12 @@
   "addLabels": [
     "Update"
   ],
-  "assigneesSampleSize": 1,
   "assignees": [
     "christian",
     "florian"
   ],
+  "assigneesFromCodeOwners": true,
+  "assigneesSampleSize": 1,
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": true,
   "dependencyDashboardLabels": [
