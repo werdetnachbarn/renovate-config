@@ -28,6 +28,7 @@
       "schedule:weekends"
     ]
   },
+  "npmrc": "@werdetnachbarn:registry=https://git.werdetnachbarn.de/api/v4/packages/npm/",
   "packageRules": [
     {
       "matchDatasources": ["npm"],
@@ -41,6 +42,7 @@
     {
       "description": "Automerge non-major updates",
       "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
+      "matchCurrentVersion": "!/^0/",
       "automerge": true
     },
     {
