@@ -52,5 +52,6 @@
   ],
   "rollback": {
     "automerge": true
-  }
+  },
+  "separateMultipleMajor": true
 }
