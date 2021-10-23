@@ -27,7 +27,6 @@
       "schedule:weekends"
     ]
   },
-  "npmrc": "@werdetnachbarn:registry=https://git.werdetnachbarn.de/api/v4/packages/npm/",
   "packageRules": [
     {
       "matchDatasources": ["npm"],
