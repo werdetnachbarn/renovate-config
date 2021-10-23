@@ -18,7 +18,6 @@
   "assigneesFromCodeOwners": true,
   "assigneesSampleSize": 1,
   "dependencyDashboard": true,
-  "dependencyDashboardAutoclose": true,
   "dependencyDashboardLabels": [
     "Update"
   ],
