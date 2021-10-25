@@ -11,10 +11,6 @@
   "addLabels": [
     "Update"
   ],
-  "assignees": [
-    "christian",
-    "florian"
-  ],
   "assigneesFromCodeOwners": true,
   "assigneesSampleSize": 1,
   "dependencyDashboard": true,
