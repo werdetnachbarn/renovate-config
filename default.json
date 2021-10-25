@@ -48,8 +48,10 @@
     },
     {
       "description": "Semantic-Release package Group",
-      "matchPackagePrefixes": [
-        "@semantic-release/"
+      "matchPackageNames": ["semantic-release"],
+      "matchPackagePatterns": [
+        "^@semantic-release\\/",
+        "semantic-release"
       ],
       "groupName": "semantic-release packages"
     }
