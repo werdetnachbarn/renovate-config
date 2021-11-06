@@ -57,6 +57,7 @@
       "groupSlug": "semantic-release"
     }
   ],
+  "platformAutomerge": true,
   "rollback": {
     "automerge": true
   },
