@@ -42,16 +42,14 @@
     {
       "description": "Group prettier packages",
       "matchPackageNames": ["prettier"],
-      "matchPackagePatterns": ["^@prettier\\/", "^prettier-plugin-"],
+      "matchPackagePatterns": ["^@prettier\/", "^prettier-plugin-"],
       "groupName": "prettier packages"
     },
     {
       "description": "Semantic-Release package Group",
-      "matchPackageNames": ["semantic-release"],
-      "matchPackagePatterns": [
-        "^@semantic-release\\/",
-        "semantic-release"
-      ],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/apollographql/"
+      ]
       "groupName": "semantic-release packages",
       "groupSlug": "semantic-release"
     }
