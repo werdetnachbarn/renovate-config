@@ -6,8 +6,7 @@
     "github>whitesource/merge-confidence:beta",
     ":prHourlyLimitNone",
     ":prConcurrentLimit10",
-    ":timezone(Europe/Berlin)",
-    "group:reactMonorepo"
+    ":timezone(Europe/Berlin)"
   ],
   "addLabels": [
     "Update"
