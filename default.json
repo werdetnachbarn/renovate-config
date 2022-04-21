@@ -48,7 +48,7 @@
     {
       "description": "Semantic-Release package Group",
       "matchSourceUrlPrefixes": [
-        "https://github.com/apollographql/"
+        "https://github.com/semantic-release/"
       ]
       "groupName": "semantic-release packages",
       "groupSlug": "semantic-release"
