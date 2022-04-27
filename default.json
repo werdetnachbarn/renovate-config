@@ -44,6 +44,11 @@
       "matchPackageNames": ["prettier"],
       "matchPackagePatterns": ["^@prettier\/", "^prettier-plugin-"],
       "groupName": "prettier packages"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@apollo/client"],
+      "allowedVersions": "<3.6"
     }
   ],
   "platformAutomerge": true,
