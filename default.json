@@ -19,6 +19,8 @@
   ],
   "lockFileMaintenance": {
     "enabled": true,
+    "platformAutomerge": true,
+    "automerge": true,
     "extends": [
       "schedule:weekends"
     ]
