@@ -51,6 +51,11 @@
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@apollo/client"],
       "allowedVersions": "<3.6"
+    },
+    {
+      "matchDatasources": ["packagist"],
+      "matchPackageNames": ["nunomaduro/larastan"],
+      "allowedVersions": "<2.1.12"
     }
   ],
   "platformAutomerge": true,
