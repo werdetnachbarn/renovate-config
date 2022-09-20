@@ -48,6 +48,11 @@
       "groupName": "prettier packages"
     },
     {
+      "description": "Group react packages",
+      "extends": "packages:react",
+      "groupName": "react packages",
+    },
+    {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["@apollo/client"],
       "allowedVersions": "<3.6"
