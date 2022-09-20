@@ -49,7 +49,14 @@
     },
     {
       "description": "Group react packages",
-      "extends": "packages:react",
+      "matchPackageNames": [
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "matchPackagePrefixes": [
+        "react",
+        "react-dom"
+      ],
       "groupName": "react packages",
     },
     {
