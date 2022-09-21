@@ -27,17 +27,26 @@
   },
   "packageRules": [
     {
-      "matchDatasources": ["npm"],
+      "matchDatasources": [
+        "npm"
+      ],
       "rollbackPrs": true
     },
     {
       "description": "Require dashboard approval for major updates",
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "dependencyDashboardApproval": true
     },
     {
       "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest",
+        "lockFileMaintenance"
+      ],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
     },
@@ -55,7 +64,17 @@
         "react",
         "react-dom"
       ],
-      "groupName": "react packages",
+      "groupName": "react packages"
+    },
+    {
+      "description": "Group playwright package and ci image",
+      "matchPackageNames": [
+        "registry.git.werdetnachbarn.de/werdetnachbarn/development/docker/playwright-ci"
+      ],
+      "matchPackagePatterns": [
+        "^@playwright\/"
+      ],
+      "groupName": "playwright packages"
     },
     {
       "matchDatasources": ["npm"],
