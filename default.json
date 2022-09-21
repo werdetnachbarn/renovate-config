@@ -51,9 +51,7 @@
       "description": "Group react packages",
       "matchPackageNames": [
         "@types/react",
-        "@types/react-dom"
-      ],
-      "matchPackagePrefixes": [
+        "@types/react-dom",
         "react",
         "react-dom"
       ],
