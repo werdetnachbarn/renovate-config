@@ -62,7 +62,8 @@
         "@types/react",
         "@types/react-dom",
         "react",
-        "react-dom"
+        "react-dom",
+        "@testing-library/react"
       ],
       "groupName": "react packages"
     },
