@@ -86,6 +86,12 @@
       "matchDatasources": ["packagist"],
       "matchPackageNames": ["nunomaduro/larastan"],
       "allowedVersions": "<2.1.12"
+    },
+    {
+      "extends": "monorepo:storybook",
+      "dependencyDashboardApproval": true,
+      "platformAutomerge": false,
+      "automerge": false,
     }
   ],
   "platformAutomerge": true,
