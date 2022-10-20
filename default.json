@@ -94,6 +94,13 @@
       "automerge": false,
     }
   ],
+    "regexManagers": [
+    {
+      "fileMatch": ["Dockerfile$"],
+      "matchStrings": ["FROM git\\.werdetnachbarn\\.de/werdetnachbarn/dependency_proxy/containers/(?<depName>.*?):(?<currentValue>.*?)\n"],
+      "datasourceTemplate": "docker"
+    }
+  ],
   "platformAutomerge": true,
   "rollback": {
     "automerge": true
