@@ -91,10 +91,10 @@
       "extends": "monorepo:storybook",
       "dependencyDashboardApproval": true,
       "platformAutomerge": false,
-      "automerge": false,
+      "automerge": false
     }
   ],
-    "regexManagers": [
+  "regexManagers": [
     {
       "fileMatch": ["Dockerfile$"],
       "matchStrings": ["FROM \$CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX\/(?<depName>.*?):(?<currentValue>\S*?)\s"],
