@@ -105,5 +105,6 @@
   "rollback": {
     "automerge": true
   },
-  "separateMultipleMajor": true
+  "separateMultipleMajor": true,
+  "ignoreScripts": false
 }
