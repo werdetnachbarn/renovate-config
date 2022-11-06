@@ -97,7 +97,7 @@
   "regexManagers": [
     {
       "fileMatch": ["Dockerfile$"],
-      "matchStrings": ["FROM \\$CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"],
+        "matchStrings": ["FROM (?>\\$CI_DEPENDENCY_PROXY(?>_DIRECT)?_GROUP_IMAGE_PREFIX|git\\.werdetnachbarn\\.de\/.*\/dependency_proxy\/containers)\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"],
       "datasourceTemplate": "docker"
     }
   ],
