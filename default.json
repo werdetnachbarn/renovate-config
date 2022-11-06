@@ -52,8 +52,13 @@
     },
     {
       "description": "Group prettier packages",
-      "matchPackageNames": ["prettier"],
-      "matchPackagePatterns": ["^@prettier\/", "^prettier-plugin-"],
+      "matchPackageNames": [
+        "prettier"
+      ],
+      "matchPackagePatterns": [
+        "^@prettier\/",
+        "^prettier-plugin-"
+      ],
       "groupName": "prettier packages"
     },
     {
@@ -78,13 +83,21 @@
       "groupName": "playwright packages"
     },
     {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["@apollo/client"],
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@apollo/client"
+      ],
       "allowedVersions": "<3.6"
     },
     {
-      "matchDatasources": ["packagist"],
-      "matchPackageNames": ["nunomaduro/larastan"],
+      "matchDatasources": [
+        "packagist"
+      ],
+      "matchPackageNames": [
+        "nunomaduro/larastan"
+      ],
       "allowedVersions": "<2.1.12"
     },
     {
@@ -96,8 +109,12 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["Dockerfile$"],
-        "matchStrings": ["FROM (?>\\$CI_DEPENDENCY_PROXY(?>_DIRECT)?_GROUP_IMAGE_PREFIX|git\\.werdetnachbarn\\.de\/.*\/dependency_proxy\/containers)\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"],
+      "fileMatch": [
+        "Dockerfile$"
+      ],
+      "matchStrings": [
+        "FROM (\\$CI_DEPENDENCY_PROXY(_DIRECT)?_GROUP_IMAGE_PREFIX|git\\.werdetnachbarn\\.de\/.*\/dependency_proxy\/containers)\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"
+      ],
       "datasourceTemplate": "docker"
     }
   ],
