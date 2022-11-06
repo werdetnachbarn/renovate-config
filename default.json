@@ -113,7 +113,7 @@
         "Dockerfile$"
       ],
       "matchStrings": [
-        "FROM (\\$CI_DEPENDENCY_PROXY(_DIRECT)?_GROUP_IMAGE_PREFIX|git\\.werdetnachbarn\\.de\/.*\/dependency_proxy\/containers)\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"
+        "FROM (\\$CI_DEPENDENCY_PROXY(_DIRECT)?_GROUP_IMAGE_PREFIX|git\\.werdetnachbarn\\.de\\/.*\\/dependency_proxy\\/containers)\\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"
       ],
       "datasourceTemplate": "docker"
     }
