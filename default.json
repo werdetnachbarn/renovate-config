@@ -17,6 +17,7 @@
   "dependencyDashboardLabels": [
     "Update"
   ],
+  "postUpdateOptions": ["npmDedupe"],
   "lockFileMaintenance": {
     "enabled": true,
     "platformAutomerge": true,
