@@ -11,7 +11,7 @@
   "addLabels": [
     "Update"
   ],
-  "assigneesFromCodeOwners": true,
+  "assignees": ["christian"],
   "assigneesSampleSize": 1,
   "dependencyDashboard": true,
   "dependencyDashboardLabels": [
