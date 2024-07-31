@@ -11,6 +11,7 @@
   "addLabels": [
     "Update"
   ],
+  "ignorePrAuthor": true,
   "assigneesSampleSize": 1,
   "dependencyDashboard": true,
   "dependencyDashboardLabels": [
