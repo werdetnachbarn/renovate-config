@@ -3,7 +3,7 @@
   "extends": [
     "config:recommended",
     ":semanticCommits",
-    "github>whitesource/merge-confidence:beta",
+    "mergeConfidence:all-badges",
     ":prHourlyLimitNone",
     ":prConcurrentLimit10",
     ":timezone(Europe/Berlin)"
@@ -14,6 +14,7 @@
   "ignorePrAuthor": true,
   "assigneesSampleSize": 1,
   "dependencyDashboard": true,
+  "configMigration": true,
   "dependencyDashboardLabels": [
     "Update"
   ],
@@ -61,11 +62,9 @@
     {
       "description": "Group prettier packages",
       "matchPackageNames": [
-        "prettier"
-      ],
-      "matchPackagePatterns": [
-        "^@prettier\/",
-        "^prettier-plugin-"
+        "prettier",
+        "/^@prettier//",
+        "/^prettier-plugin-/"
       ],
       "groupName": "prettier packages"
     },
@@ -83,10 +82,8 @@
     {
       "description": "Group playwright package and ci image",
       "matchPackageNames": [
-        "registry.git.werdetnachbarn.de/werdetnachbarn/development/docker/playwright-ci"
-      ],
-      "matchPackagePatterns": [
-        "^@playwright\/"
+        "registry.git.werdetnachbarn.de/werdetnachbarn/development/docker/playwright-ci",
+        "/^@playwright//"
       ],
       "groupName": "playwright packages"
     },
@@ -100,19 +97,20 @@
       "allowedVersions": "<3.6"
     },
     {
-      "extends": "monorepo:storybook",
+      "extends": ["monorepo:storybook"],
       "dependencyDashboardApproval": true,
       "platformAutomerge": false,
       "automerge": false
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [
         "Dockerfile$"
       ],
       "matchStrings": [
-        "FROM (\\$CI_DEPENDENCY_PROXY(_DIRECT)?_GROUP_IMAGE_PREFIX|git\\.werdetnachbarn\\.de\\/.*\\/dependency_proxy\\/containers)\\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"
+        "FROM (\\$CI_DEPENDENCY_PROXY(_DIRECT)?_GROUP_IMAGE_PREFIX|gitlab\\.com\\/.*\\/dependency_proxy\\/containers)\\/(?<depName>.*?):(?<currentValue>\\S*?)\\s"
       ],
       "datasourceTemplate": "docker"
     }
