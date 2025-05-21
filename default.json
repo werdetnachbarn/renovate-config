@@ -82,7 +82,7 @@
     {
       "description": "Group playwright package and ci image",
       "matchPackageNames": [
-        "registry.git.werdetnachbarn.de/werdetnachbarn/development/docker/playwright-ci",
+        "registry.gitlab.com/werdetnachbarn/development/docker/playwright-ci",
         "/^@playwright//"
       ],
       "groupName": "playwright packages"
