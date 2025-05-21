@@ -95,15 +95,6 @@
       "groupName": "playwright packages"
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "@apollo/client"
-      ],
-      "allowedVersions": "<3.6"
-    },
-    {
       "extends": ["monorepo:storybook"],
       "dependencyDashboardApproval": true,
       "platformAutomerge": false,
