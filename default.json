@@ -88,6 +88,13 @@
       "groupName": "playwright packages"
     },
     {
+      "description": "Group nx-tools packages",
+      "matchPackageNames": [
+        "/^@nx-tools//"
+      ],
+      "groupName": "playwright packages"
+    },
+    {
       "matchDatasources": [
         "npm"
       ],
