@@ -6,8 +6,7 @@
     "mergeConfidence:all-badges",
     ":prHourlyLimitNone",
     ":prConcurrentLimit10",
-    ":timezone(Europe/Berlin)",
-    "security:only-security-updates"
+    ":timezone(Europe/Berlin)"
   ],
   "addLabels": [
     "Update"
@@ -28,7 +27,17 @@
       "schedule:weekends"
     ]
   },
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "osvVulnerabilityAlerts": true,
   "packageRules": [
+    {
+      "dependencyDashboardApproval": true,
+      "matchPackageNames": [
+        "*"
+      ]
+    },
     {
       "matchDatasources": [
         "npm"
