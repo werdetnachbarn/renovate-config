@@ -6,7 +6,8 @@
     "mergeConfidence:all-badges",
     ":prHourlyLimitNone",
     ":prConcurrentLimit10",
-    ":timezone(Europe/Berlin)"
+    ":timezone(Europe/Berlin)",
+    "security:only-security-updates"
   ],
   "addLabels": [
     "Update"
