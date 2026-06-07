@@ -15,6 +15,7 @@
   "assigneesSampleSize": 1,
   "dependencyDashboard": true,
   "configMigration": true,
+  "minimumReleaseAge": "7 days",
   "dependencyDashboardLabels": [
     "Update"
   ],
